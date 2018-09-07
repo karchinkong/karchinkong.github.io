@@ -1,0 +1,44 @@
+#Home{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 300px;
+    text-align: center;
+}
+
+#Home .avatar{
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background: url("../images/avatar.png") no-repeat;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+#Home .avatar a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#Home h1{
+    margin: 20px 0;
+    color: #555;
+    font-size: 16px;
+    font-weight: normal;
+}
+#Home .link a{
+    margin: 0 10px;
+    font-size: 14px;
+    color: #000;
+}
+#Home .link a i{
+    margin-right: 3px;
+}
+#Home .link a:hover{
+    color: #1890ff;
+}
