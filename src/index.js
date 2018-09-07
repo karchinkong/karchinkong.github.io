@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-	BrowserRouter,
+	HashRouter,
 	Route,
 	Switch
 } from 'react-router-dom';
@@ -70,7 +70,7 @@ const AsyncIntroduce = Loadable({
 
 ReactDOM.render(
 	<Provider store={store}>
-		<BrowserRouter>
+		<HashRouter>
 			<App>
 				<Route exact path="/" component={AsyncMenu}/>
 				<Route path="/all" component={AsyncAll} />
@@ -78,7 +78,7 @@ ReactDOM.render(
 				<Route path="/post/:id" component={AsyncDetail} />
 				<Route path="/introduce" component={AsyncIntroduce} />
 			</App>
-		</BrowserRouter>
+		</HashRouter>
 	</Provider>,
 	document.getElementById('root')
 );

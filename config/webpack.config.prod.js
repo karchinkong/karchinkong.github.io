@@ -71,7 +71,7 @@ module.exports = {
 		devtoolModuleFilenameTemplate: info =>
 			path
 				.relative(paths.appSrc, info.absoluteResourcePath)
-				.replace(/\\/g, '/'),
+				.replace(/\\/g, './'),
 	},
 	resolve: {
 		// This allows you to set a fallback for where Webpack should look for modules.
