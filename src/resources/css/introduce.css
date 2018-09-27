@@ -5,3 +5,12 @@
     align-items: center;
     justify-content: center;
 }
+.introduce .avatar{
+    width: 100%;
+}
+.introduce .alert{
+    margin-bottom: 30px;
+}
+.introduce-info > div{
+    margin-bottom: 0.5em;
+}

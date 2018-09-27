@@ -64,13 +64,13 @@ export const fetchInfo = () => {
 
 	return (dispatch, getState) => {
 
-		const {owner, githubUrl, age} = CONFIG;
+		const {owner, githubUrl, age, jobs} = CONFIG;
 
 		dispatch({
 
 			type: FETCH_INFO,
 
-			data: {owner, githubUrl, age}
+			data: {owner, githubUrl, age, jobs}
 
 		});
 
