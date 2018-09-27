@@ -16,8 +16,11 @@ const indexReducer = (state, action) => {
 			return {
 				...state,
 				isFetching: false,
-				items: action.posts
+				items: action.posts,
+				userInfo: {}
 			};
+			
+			break;
 
 		case FETCH_INFO:
 			return {
@@ -26,6 +29,8 @@ const indexReducer = (state, action) => {
 				items: [],
 				userInfo: action.data
 			};
+			
+			break;
 
 		default:
 			return state;
