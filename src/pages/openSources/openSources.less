@@ -1,0 +1,50 @@
+@import '../../mixins/mixins';
+
+.wrapper {
+    min-height: calc(50vh - 1.4vmax * 2 - 3ex);
+    padding-top: 16vmin;
+    padding-bottom: 16vmin;
+    margin-bottom: 16vmin;
+}
+
+.title {
+    .title();
+}
+
+.subTitle {
+    .subTitle();
+    font-size: 168%;
+}
+
+.content {
+    .list {
+        display: block;
+        margin: 0 0 1rem;
+        color: #fff;
+        h1 {
+            font-size: 180%;
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-weight: bold;
+            color: #fff;
+        }
+        .description {
+            font-size: 148%;
+            opacity: .8;
+            margin-bottom: 1.6rem;
+            line-height: 1.71428571;
+        }
+        .info {
+            margin: 0 0 1rem;
+            font-size: 72%;
+            font-weight: 400;
+            opacity: .5;
+            .icon {
+                margin-left: 10px;
+            }
+            .language {
+                color: #5477f8;
+            }
+        }
+    }
+}
