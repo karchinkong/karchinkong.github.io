@@ -28,7 +28,7 @@ const parseQuery = (obj) => {
 };
 
 const checkSuccess = (data) => {
-    if (data.length > 0) {
+    if ((Array.isArray(data) && data.length > 0) || (!Array.isArray(data) && Object.keys(data).length > 0)) {
         return data;
     } else {
         const error = new Error(data.msg);

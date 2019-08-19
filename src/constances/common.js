@@ -4,6 +4,8 @@ export const GITHUB_AUTHOR = 'karchinkong';
 
 export const GITHUB_HOST = 'https://github.com/karchinkong';
 
+export const WARE_HOUSE = 'BlogSystem';
+
 export const CHINESE_NAME = '邝嘉俊';
 
 export const AGE = '90后';

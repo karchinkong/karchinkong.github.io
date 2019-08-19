@@ -1,0 +1,41 @@
+@import '../../mixins/mixins';
+
+.wrapper {
+    min-height: calc(50vh - 1.4vmax * 2 - 3ex);
+    padding-top: 16vmin;
+    padding-bottom: 16vmin;
+    margin-bottom: 16vmin;
+    .title {
+        font-size: 360%;
+        font-weight: 700;
+        letter-spacing: -.04em;
+        margin-left: -2px;
+        hyphens: none;
+        line-height: 1.1;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    .subTitle {
+        display: block;
+        margin-top: 2vmin;
+        color: #fff;
+        font-size: 100%;
+    }
+}
+
+.content {
+    margin-bottom: 5vh;
+    & > * {
+        color: #fff;
+    }
+}
+
+.comment {
+    padding: 20px 0;
+    * {
+        color: #fff;
+    }
+    .textArea {
+        background: transparent;
+    }
+}

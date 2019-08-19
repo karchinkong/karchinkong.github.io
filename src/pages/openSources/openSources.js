@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon, Empty, Spin } from 'antd';
 import { connect } from 'dva';
 import styles from './openSources.less';
+import Loading from '../../components/loading/loading';
 
 class OpenSources extends Component {
     componentDidMount() {
@@ -18,18 +19,10 @@ class OpenSources extends Component {
                 <article>
                     <header className={styles.wrapper}>
                         <h3 className={styles.title}>Open-Source</h3>
-                        <h4 className={styles.subTitle}>共{openSourceLists.length}个开源项目</h4>
+                        <h4 className={styles.subTitle}>共{openSourceLists ? openSourceLists.length : 0}个开源项目</h4>
                     </header>
                     <div className={styles.content}>
-                        {
-                            loading && (
-                                <div className={styles.loading}>
-                                    <Spin indicator={
-                                        <Icon type="loading" style={{ fontSize: 24 }} spin/>
-                                    }/>
-                                </div>
-                            )
-                        }
+                        {loading && <Loading/>}
                         {
                             !loading && (openSourceLists && openSourceLists.length > 0 ? openSourceLists.map(item => (
                                 <section className={styles.list} key={item.id}>
@@ -47,7 +40,12 @@ class OpenSources extends Component {
                                 </section>
                             )) : (
                                 <Empty
-                                    description={<span className={styles.emptyDescription}>暂无数据~略略略</span>}
+                                    image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
+                                    imageStyle={{
+                                        height: 60,
+                                        margin: '40px 0 10px',
+                                    }}
+                                    className={styles.emptyData}
                                 />
                             ))
                         }

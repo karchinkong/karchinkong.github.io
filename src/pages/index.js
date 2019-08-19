@@ -2,6 +2,7 @@ import styles from './index.less';
 import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Spin, Icon } from 'antd';
+import router from 'umi/router';
 import { GITHUB_AUTHOR, GITHUB_HOST } from '../constances/common';
 
 class Index extends Component {
@@ -12,6 +13,12 @@ class Index extends Component {
             payload: { creator: GITHUB_AUTHOR, per_page: 100 },
         });
     }
+
+    goDetail = id => {
+        router.push({
+            pathname: `/app/issue/${id}`
+        });
+    };
 
     render() {
         const { issuesLists, loading } = this.props;
@@ -43,7 +50,8 @@ class Index extends Component {
                         }
                         {
                             !loading && (issuesLists && issuesLists.length > 0 ? issuesLists.map(issue => (
-                                <section className={styles.lists} key={issue.id}>
+                                <section className={styles.lists} key={issue.id}
+                                         onClick={this.goDetail.bind(this, issue.number)}>
                                     <h1>
                                         <span
                                             className={`${styles.listType} ${styles[issue.labels[0].name.replace(new RegExp(' ', 'g'), '-')]}`}
