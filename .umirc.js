@@ -21,7 +21,8 @@ export default {
             component: '../layouts/index',
             routes: [
                 { path: '/app', component: './index' },
-                { path: '/app/about', component: './about/about' }
+                { path: '/app/about', component: './about/about' },
+                { path: '/app/openSources', component: './openSources/openSources' }
             ],
         },
     ],

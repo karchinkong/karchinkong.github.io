@@ -1,8 +1,9 @@
-import { queryIssues } from '../services/index';
+import { queryIssues, queryOpenSources } from '../services/index';
 
 export default {
     state: {
         issuesLists: [],
+        openSourceLists: [],
     },
     reducers: {
         save(state, action) {
@@ -11,10 +12,17 @@ export default {
     },
     effects: {
         * queryIssues({ payload }, { call, put }) {
-            const data = yield call(queryIssues, payload);
+            const issuesLists = yield call(queryIssues, payload);
             yield put({
                 type: 'save',
-                payload: { issuesLists: data },
+                payload: { issuesLists },
+            });
+        },
+        * queryOpenSourceLists({ payload }, { call, put }) {
+            const openSourceLists = yield call(queryOpenSources);
+            yield put({
+                type: 'save',
+                payload: { openSourceLists },
             });
         },
     },

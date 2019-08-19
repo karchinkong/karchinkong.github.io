@@ -11,7 +11,7 @@ function BasicLayout(props) {
             <nav className={styles.navigation}>
                 <Row>
                     <Col className={pathname === '/app' ? styles.active : ''} span={6}><Link to="/">KarChin</Link></Col>
-                    <Col className={pathname === '/openSource' ? styles.active : ''} span={6}><Link to="/">OPEN-SOURCE</Link></Col>
+                    <Col className={pathname === '/app/openSources' ? styles.active : ''} span={6}><Link to="/app/openSources">OPEN-SOURCE</Link></Col>
                     <Col span={6}><a href={GITHUB_HOST}>GITHUB</a></Col>
                     <Col className={pathname === '/app/about' ? styles.active : ''} span={6}><Link to="/app/about">ABOUT</Link></Col>
                 </Row>
