@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="640158bf-d298-4ba9-bf8f-ab1726e45d32" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loading/loading.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constances/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constances/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mixins/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/mixins/mixins.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about/about.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about/about.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.async.js" beforeDir="false" afterPath="$PROJECT_DIR$/2.async.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/issue/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/issue/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/openSources/openSources.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/openSources/openSources.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/openSources/openSources.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/openSources/openSources.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +33,8 @@
           <entry key="css" value="6" />
           <entry key="editorconfig" value="1" />
           <entry key="env" value="1" />
-          <entry key="eslintrc" value="1" />
-          <entry key="js" value="76" />
+          <entry key="eslintrc" value="2" />
+          <entry key="js" value="77" />
           <entry key="json" value="2" />
           <entry key="less" value="26" />
         </counts>
@@ -50,8 +42,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="6" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="76" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="77" />
           <entry key="Less" value="26" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
@@ -65,16 +57,16 @@
         <counts>
           <entry key="css" value="66" />
           <entry key="editorconfig" value="1" />
-          <entry key="eslintrc" value="30" />
-          <entry key="js" value="10592" />
+          <entry key="eslintrc" value="32" />
+          <entry key="js" value="10596" />
           <entry key="less" value="1536" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="66" />
-          <entry key="JSON" value="30" />
-          <entry key="JavaScript" value="10592" />
+          <entry key="JSON" value="32" />
+          <entry key="JavaScript" value="10596" />
           <entry key="Less" value="1536" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -83,13 +75,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/issue/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="246">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#501#835#0" />
               </folding>
             </state>
           </provider>
@@ -98,8 +91,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-291">
-              <caret line="2" column="92" lean-forward="true" selection-start-line="2" selection-start-column="92" selection-end-line="3" selection-end-column="76" />
+            <state relative-caret-position="193">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/openSources/openSources.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,6 +138,7 @@
       <find>loading</find>
       <find>submitting</find>
       <find>addCommentLoading</find>
+      <find>useEffect</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -152,20 +161,20 @@
         <option value="$PROJECT_DIR$/src/services/index.js" />
         <option value="$PROJECT_DIR$/src/pages/issue/detail.less" />
         <option value="$PROJECT_DIR$/.editorconfig" />
-        <option value="$PROJECT_DIR$/.eslintrc" />
         <option value="$PROJECT_DIR$/src/constances/common.js" />
         <option value="$PROJECT_DIR$/src/components/Title/Title.less" />
         <option value="$PROJECT_DIR$/src/components/Title/Title.js" />
         <option value="$PROJECT_DIR$/src/pages/about/about.less" />
         <option value="$PROJECT_DIR$/src/mixins/mixins.less" />
         <option value="$PROJECT_DIR$/src/pages/index.less" />
-        <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/pages/openSources/openSources.less" />
         <option value="$PROJECT_DIR$/src/pages/about/about.js" />
-        <option value="$PROJECT_DIR$/src/pages/openSources/openSources.js" />
         <option value="$PROJECT_DIR$/src/components/listWithLoading/listWithLoading.js" />
         <option value="$PROJECT_DIR$/src/models/index.js" />
+        <option value="$PROJECT_DIR$/.eslintrc" />
+        <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/pages/issue/detail.js" />
+        <option value="$PROJECT_DIR$/src/pages/openSources/openSources.js" />
       </list>
     </option>
   </component>
@@ -277,12 +286,12 @@
       <workItem from="1566196695694" duration="9373000" />
       <workItem from="1566209734045" duration="3323000" />
       <workItem from="1566215247279" duration="146000" />
-      <workItem from="1566265182644" duration="9583000" />
+      <workItem from="1566265182644" duration="10070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42652000" />
+    <option name="totallyTimeSpent" value="43139000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="832" extended-state="6" />
@@ -302,7 +311,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32734805" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32871014" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.42679557" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.42679557" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -393,13 +402,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendors.async.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor" />
@@ -503,13 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/openSources/openSources.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/listWithLoading/listWithLoading.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -517,13 +512,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="2" column="92" lean-forward="true" selection-start-line="2" selection-start-column="92" selection-end-line="3" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -538,12 +526,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/issue/detail.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="246">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
+            <element signature="e#501#835#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/openSources/openSources.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
