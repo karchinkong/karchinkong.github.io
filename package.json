@@ -14,7 +14,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.1.0",
-    "react-syntax-highlighter": "^11.0.2"
+    "react-syntax-highlighter": "^11.0.2",
+    "react-transition-group": "^4.2.2"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
@@ -32,8 +33,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   },
   "engines": {
