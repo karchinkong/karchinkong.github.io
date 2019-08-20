@@ -2,6 +2,7 @@
   "extends": "eslint-config-umi",
   "rules": {
     "jsx-a11y/anchor-is-valid": [0],
-    "jsx-a11y/accessible-emoji": [0]
+    "jsx-a11y/accessible-emoji": [0],
+    "react-hooks/exhaustive-deps": [0]
   }
 }

@@ -26,5 +26,9 @@ export default {
                 { path: '/app/issue/:id', component: './issue/detail' }
             ],
         },
+        {
+            path: '/*',
+            component: './notFound/notFound'
+        }
     ],
 };

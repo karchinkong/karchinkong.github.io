@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import CodeBlock from './CodeBlock';
 import avatarSrc from '@/assets/avatar.jpg';
 import moment from 'moment';
-import listWithLoading from '../../components/listWithLoading/listWithLoading';
+import ListWithLoading from '../../components/listWithLoading/listWithLoading';
 
 const { TextArea } = Input;
 
@@ -41,9 +41,9 @@ const Detail = props => {
 
     return (
         <div>
-            <listWithLoading loading={loading}>
+            <ListWithLoading loading={loading}>
                 {
-                    !loading && issueDetail && Object.keys(issueDetail).length > 0 && (
+                    issueDetail && Object.keys(issueDetail).length > 0 && (
                         <main>
                             <article>
                                 <header className={styles.wrapper}>
@@ -63,7 +63,7 @@ const Detail = props => {
                         </main>
                     )
                 }
-            </listWithLoading>
+            </ListWithLoading>
             <div className={styles.comment}>
                 <Divider>评论区</Divider>
                 {
