@@ -2,9 +2,17 @@ export const API_PREFIX = 'https://api.github.com';
 
 export const GITHUB_AUTHOR = 'karchinkong';
 
+export const NAME = 'KarChin';
+
 export const GITHUB_HOST = 'https://github.com/karchinkong';
 
+export const MOTTO = 'Fight for the HipHop all the time.';
+
 export const WARE_HOUSE = 'BlogSystem';
+
+export const JOB = 'Web Developer';
+
+export const REGION = 'China Guangzhou';
 
 export const CHINESE_NAME = '邝嘉俊';
 

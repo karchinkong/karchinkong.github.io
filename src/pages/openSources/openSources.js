@@ -1,30 +1,29 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import { Icon, Empty } from 'antd';
 import { connect } from 'dva';
 import styles from './openSources.less';
-import Loading from '../../components/loading/loading';
+import Title from '../../components/Title/Title';
+import ListWithLoading from '../../components/listWithLoading/listWithLoading';
 
-class OpenSources extends Component {
-    componentDidMount() {
-        const { dispatch } = this.props;
-        dispatch({
-            type: 'index/queryOpenSourceLists',
-        });
-    }
+const OpenSources = (props) => {
 
-    render() {
-        const { openSourceLists, loading } = this.props;
-        return (
-            <main>
-                <article>
-                    <header className={styles.wrapper}>
-                        <h3 className={styles.title}>Open-Source</h3>
-                        <h4 className={styles.subTitle}>共{openSourceLists ? openSourceLists.length : 0}个开源项目</h4>
-                    </header>
-                    <div className={styles.content}>
-                        {loading && <Loading/>}
+    useEffect(() => {
+        props.dispatch({ type: 'index/queryOpenSourceLists' });
+    }, [props]);
+
+    const { openSourceLists, loading } = props;
+
+    return (
+        <main>
+            <article>
+                <Title
+                    title="Open-Source"
+                    subTitle={`共${openSourceLists ? openSourceLists.length : 0}个开源项目`}
+                />
+                <div className={styles.content}>
+                    <ListWithLoading loading={loading}>
                         {
-                            !loading && (openSourceLists && openSourceLists.length > 0 ? openSourceLists.map(item => (
+                            openSourceLists && openSourceLists.length > 0 ? openSourceLists.map(item => (
                                 <section className={styles.list} key={item.id}>
                                     <h1>{item.name}</h1>
                                     <p className={styles.description}>{item.description}</p>
@@ -41,21 +40,17 @@ class OpenSources extends Component {
                             )) : (
                                 <Empty
                                     image="https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original"
-                                    imageStyle={{
-                                        height: 60,
-                                        margin: '40px 0 10px',
-                                    }}
+                                    imageStyle={{ height: 60, margin: '40px 0 10px' }}
                                     className={styles.emptyData}
                                 />
-                            ))
+                            )
                         }
-                    </div>
-                </article>
-            </main>
-        );
-    }
-}
-
+                    </ListWithLoading>
+                </div>
+            </article>
+        </main>
+    );
+};
 
 const mapStateToProps = state => ({
     openSourceLists: state.index.openSourceLists,
