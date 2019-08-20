@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, Empty, Spin } from 'antd';
+import { Icon, Empty } from 'antd';
 import { connect } from 'dva';
 import styles from './openSources.less';
 import Loading from '../../components/loading/loading';

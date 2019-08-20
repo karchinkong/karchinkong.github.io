@@ -35,7 +35,7 @@ class About extends Component {
                                 <List.Item>
                                     <List.Item.Meta
                                         avatar={<Avatar src={item.src}/>}
-                                        title={<a className={styles.listTitle}>{item.title}</a>}
+                                        title={<a href="" className={styles.listTitle}>{item.title}</a>}
                                         description={
                                             <Progress
                                                 strokeColor={{
