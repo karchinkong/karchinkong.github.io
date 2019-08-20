@@ -14,7 +14,7 @@ const Index = (props) => {
             type: 'index/queryIssues',
             payload: { creator: GITHUB_AUTHOR, per_page: 100 },
         });
-    }, [props]);
+    }, []);
 
     const goDetail = id => {
         router.push({ pathname: `/app/issue/${id}` });

@@ -9,7 +9,7 @@ const OpenSources = (props) => {
 
     useEffect(() => {
         props.dispatch({ type: 'index/queryOpenSourceLists' });
-    }, [props]);
+    }, []);
 
     const { openSourceLists, loading } = props;
 

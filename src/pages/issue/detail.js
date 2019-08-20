@@ -30,7 +30,7 @@ const Detail = props => {
         const { id } = props.match.params;
         props.dispatch({ type: 'index/queryIssueDetailById', payload: { id } });
         props.dispatch({ type: 'index/queryIssueCommentById', payload: { id } });
-    }, [props]);
+    }, []);
 
     const onSubmit = () => {
         if (!commentValue) return;
