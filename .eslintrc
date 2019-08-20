@@ -1,9 +1,5 @@
 {
   "extends": "eslint-config-umi",
-  "env": {
-    "es6": true,
-    "browser": true
-  },
   "rules": {
     "jsx-a11y/anchor-is-valid": [0],
     "jsx-a11y/accessible-emoji": [0]
