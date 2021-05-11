@@ -1,10 +1,3 @@
-/*
- * @Description: 
- * @Author: KarChinKong
- * @Date: 2019-09-02 11:24:35
- * @LastEditors: KarChinKong
- * @LastEditTime: 2021-05-11 15:57:26
- */
 import React, { useEffect } from 'react';
 import { connect } from 'dva';
 import { GITHUB_HOST, JOB, REGION, NAME, MOTTO } from '@/constances/common';
