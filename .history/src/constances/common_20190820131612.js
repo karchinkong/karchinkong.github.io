@@ -1,10 +1,3 @@
-/*
- * @Description: 
- * @Author: KarChinKong
- * @Date: 2019-08-20 13:16:13
- * @LastEditors: KarChinKong
- * @LastEditTime: 2021-05-11 16:17:30
- */
 export const API_PREFIX = 'https://api.github.com';
 
 export const GITHUB_AUTHOR = 'karchinkong';
@@ -19,7 +12,7 @@ export const WARE_HOUSE = 'BlogSystem';
 
 export const JOB = 'Web Developer';
 
-export const REGION = 'SiChuan ChengDu';
+export const REGION = 'China Guangzhou';
 
 export const CHINESE_NAME = '邝嘉俊';
 
