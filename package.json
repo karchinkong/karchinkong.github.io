@@ -10,7 +10,7 @@
   "dependencies": {
     "antd": "^3.19.5",
     "dva": "^2.6.0-beta.6",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "rc-queue-anim": "^1.8.2",
     "rc-texty": "^0.2.0",
     "react": "^16.8.6",
